@@ -16,16 +16,29 @@ import { Chart } from 'react-chartjs-2';
     },
     scales: {
       y: {
+        title: {
+          display: true,
+          text: 'Count'
+        },
+        ticks: {
+          min: 1,
+          max: 22, 
+          stepSize: 1
+      },
         grid: {
-          color: 'rgba(224, 255, 255, .2)'
-        }
+          color: "rgba(224, 255, 255, .2)",
+        },
       },
       x: {
+        title: {
+          display: true,
+          text: 'Year'
+        },
         grid: {
-          display: false ,
-        }
-      }
-    }
+          display: false,
+        },
+      },
+    },
   };
   
 
